@@ -21,7 +21,7 @@ class Batter extends Student implements Hitter {
   private Bat bat;            
 
   public Batter() {
-        /* 빈칸(코드 작성해야함) */
+        this.record = new AtBatRecord();
   }
 
   public void grabBat(Bat schoolBat) { 
@@ -33,7 +33,7 @@ class Batter extends Student implements Hitter {
     ball.flyAway();               
   }
 
-  public void /* 빈칸(코드 작성해야함) */
+  public void swing()
   { 
     System.out.println("규칙에 맞게 올바른 폼으로 스윙합니다!"); 
   }
